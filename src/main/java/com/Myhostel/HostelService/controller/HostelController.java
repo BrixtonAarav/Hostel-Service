@@ -28,6 +28,7 @@ public class HostelController {
         return ResponseEntity.ok(hostelList);
     }
 
+
     @GetMapping("/{id}")
     public ResponseEntity<HostelModel> getHostelById(@PathVariable  int id){
         HostelModel hostel = hostelService.getHostelByID(id);
